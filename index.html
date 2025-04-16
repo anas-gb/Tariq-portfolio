@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarique Hussain Portfolio</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1a1a1a;
+            color: #e0f7fa;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #000;
+            color: #e0f7fa;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #00796b;
+            padding: 10px 0;
+        }
+        nav a {
+            color: #e0f7fa;
+            padding: 0 20px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #fff;
+        }
+        section {
+            padding: 40px 0;
+            border-bottom: 1px solid #00796b;
+        }
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .content div {
+            flex: 1;
+            min-width: 250px;
+            margin: 10px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        .content div:hover {
+            transform: translateY(-10px);
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 2em;
+        }
+        .icon {
+            font-size: 3em;
+            margin-bottom: 10px;
+            color: #00796b;
+        }
+        footer {
+            background: #000;
+            color: #e0f7fa;
+            text-align: center;
+            padding: 20px 0;
+        }
+        /* Sidebar for mobile */
+        #sidebar {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #333;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+        }
+
+        #sidebar a {
+            padding: 10px 15px;
+            text-decoration: none;
+            font-size: 1.5em;
+            color: #e0f7fa;
+            display: block;
+            transition: 0.3s;
+        }
+
+        #sidebar a:hover {
+            color: #f1f1f1;
+        }
+
+        #sidebar .closebtn {
+            position: absolute;
+            top: 20px;
+            right: 25px;
+            font-size: 2em;
+            margin-left: 50px;
+        }
+
+        #menuIcon {
+            display: none;
+            font-size: 2em;
+            cursor: pointer;
+            color: #e0f7fa;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+
+        /* Responsive adjustments */
+        @media screen and (max-width: 768px) {
+            nav {
+                display: none;
+            }
+            #menuIcon {
+                display: block;
+            }
+            .container {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h2>Tarique Hussain</h2>
+    <p>Proactive and Organized Professional</p>
+    <span id="menuIcon" onclick="openNav()"><i class="fas fa-bars"></i></span>
+</header>
+
+<nav>
+    <a href="#about">About</a>
+    <a href="#experience">Experience</a>
+    <a href="#education">Education</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<div id="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="#about"><i class="fas fa-user"></i> About</a>
+    <a href="#experience"><i class="fas fa-briefcase"></i> Experience</a>
+    <a href="#education"><i class="fas fa-graduation-cap"></i> Education</a>
+    <a href="#skills"><i class="fas fa-laptop-code"></i> Skills</a>
+    <a href="#contact"><i class="fas fa-envelope"></i> Contact</a>
+</div>
+
+<section id="about" class="container">
+    <h2>About Me</h2>
+    <div class="content">
+        <div>
+            <i class="fas fa-user icon"></i>
+            <p>A proactive and organized professional with experience in managing operations, handling clients, and improving processes. Skilled in communication, teamwork, and problem-solving to keep things running smoothly. Passionate about building strong relationships, streamlining work, and helping teams achieve their goals. Always eager to learn and adapt in a fast-moving environment.</p>
+        </div>
+    </div>
+</section>
+
+<section id="experience" class="container">
+    <h2>Work Experience</h2>
+    <div class="content">
+        <div>
+            <i class="fas fa-briefcase icon"></i>
+            <h3>Student Advisor - MEQAT Study Consultants</h3>
+            <p>01/12/2024 – Present</p>
+            <p>Location: Karachi, Pakistan</p>
+            <p>Business or Sector: Education Department, Operation department</p>
+            <p>Email: <a href="mailto:info@meqatstudyconsultants.com">info@meqatstudyconsultants.com</a></p>
+            <p>Website: <a href="https://meqatstudyconsultants.com/" target="_blank">meqatstudyconsultants.com</a></p>
+        </div>
+    </div>
+</section>
+
+<section id="education" class="container">
+    <h2>Education</h2>
+    <div class="content">
+        <div>
+            <i class="fas fa-graduation-cap icon"></i>
+            <h3>Bachelor of Business Administration (BBA)</h3>
+            <p>01/01/2020 – 31/12/2024</p>
+            <p>Institution: BBSUL</p>
+            <p>Website: <a href="https://www.bbsul.edu.pk/" target="_blank">bbsul.edu.pk</a></p>
+            <p>Level: EQF Level 6</p>
+        </div>
+        <div>
+            <i class="fas fa-certificate icon"></i>
+            <h3>English Language Certification</h3>
+            <p>Institution: PACC</p>
+            <p>Website: <a href="https://pacc.edu.pk/" target="_blank">pacc.edu.pk</a></p>
+        </div>
+        <div>
+            <i class="fas fa-school icon"></i>
+            <h3>Matriculation</h3>
+            <p>2015 – 2017</p>
+        </div>
+        <div>
+            <i class="fas fa-school icon"></i>
+            <h3>Diploma in Business Administration</h3>
+            <p>2017 – 2019</p>
+        </div>
+    </div>
+</section>
+
+<section id="skills" class="container">
+    <h2>Skills</h2>
+    <div class="content">
+        <div>
+            <i class="fas fa-laptop-code icon"></i>
+            <ul>
+                <li>Microsoft Office (Word, Excel, PowerPoint)</li>
+                <li>Research and Experimental Methods</li>
+                <li>Operating Procedure (SOP) Writing</li>
+                <li>Direction and Leadership</li>
+                <li>Interpersonal and Communication Skills</li>
+                <li>Financial Management & Valuations</li>
+                <li>Social Media and Digital Marketing</li>
+                <li>Basic Graphic Design (Canva)</li>
+                <li>Teamwork and Collaboration</li>
+                <li>Video Conferencing and Communication Tools</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="container">
+    <h2>Contact</h2>
+    <div class="content">
+        <div>
+            <i class="fas fa-envelope icon"></i>
+            <address>
+                <p>Email: <a href="mailto:Gbtariq1@gmail.com">Gbtariq1@gmail.com</a></p>
+                <p>Phone: (+92) 03496506519</p>
+                <p>Address: House no 579 street no 9 sector A, Akhtar Colony, Karachi, Pakistan</p>
+            </address>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2025 Tarique Hussain. All Rights Reserved.</p>
+</footer>
+
+<script>
+    function openNav() {
+        document.getElementById("sidebar").style.width = "250px";
+    }
+
+    function closeNav() {
+        document.getElementById("sidebar").style.width = "0";
+    }
+</script>
+
+</body>
+</html>
